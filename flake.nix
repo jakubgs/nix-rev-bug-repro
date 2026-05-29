@@ -3,8 +3,6 @@
 
   inputs.nixpkgs.url = github:NixOS/nixpkgs/nixos-25.11;
 
-  inputs.self.submodules = true;
-
   outputs = { self, nixpkgs }: let
     pkgs = import nixpkgs { system = "x86_64-linux"; };
   in {
